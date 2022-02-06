@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState, useCallback } from 'react';
 import * as anchor from '@project-serum/anchor';
 
-import {Tooltip } from "@material-ui/core";
 import styled from 'styled-components';
 import { Container, Snackbar } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
@@ -20,7 +19,6 @@ import { AlertState } from './utils';
 import { Header } from './Header';
 import { MintButton } from './MintButton';
 import { GatewayProvider } from '@civic/solana-gateway-react';
-import { CrossMintButton } from "@crossmint/client-sdk-react-ui";
 
 const ConnectButton = styled(WalletDialogButton)`
   width: 100%;
@@ -165,11 +163,6 @@ const Home = (props: HomeProps) => {
 
   return (
     <Container style={{ marginTop: 0 }}>
-    <img src="SS-MINT2.png" alt="SolSand" className="logo" />
-    <br></br>
-    <br></br>
-    <br></br>
-
       <Container maxWidth="xs" style={{ position: 'relative' }}>
         <Paper
           style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}
@@ -217,15 +210,7 @@ const Home = (props: HomeProps) => {
             </>
           )}
           
-          <Tooltip title="credit card option for PUBLIC SALE only" open={true}>
-           <CrossMintButton
-          collectionTitle="solsand"
-          collectionDescription="SolSand represents more than simply digital art. Built upon the foundations of time, enters a new paradigm: We don’t create... We are creation itself. How will you shape your world?"
-          collectionPhoto="https://dl.airtable.com/.attachments/d7282b306512eb13e664b860f54f9818/1bd32b59/Promo-Logo.png"
-          style={{margin: "auto"}}
-          
-      />
-             </Tooltip>
+ 
         </Paper>
       </Container>
 
