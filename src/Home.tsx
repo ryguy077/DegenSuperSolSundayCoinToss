@@ -173,6 +173,7 @@ const Home = (props: HomeProps) => {
             <>
               <Header candyMachine={candyMachine} />
               <MintContainer>
+      <p>Are you Degen? The pot is 15 SOL to the wallet holding the most NFTs of the winning coin toss (heads or tails)! Super Bowl 2/6/2022</p>
                 {candyMachine?.state.isActive &&
                 candyMachine?.state.gatekeeper &&
                 wallet.publicKey &&
