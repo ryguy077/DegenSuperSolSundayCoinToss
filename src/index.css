@@ -14,8 +14,9 @@ code {
 }
 
 body{
-  background-image: url(1SolBG.png);
-  height: 100%;
+  background-image: url(SoFi-Stadium-1.png);
+  width:25%;
+  height: 25%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

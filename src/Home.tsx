@@ -163,7 +163,7 @@ const Home = (props: HomeProps) => {
 
   return (
     <Container style={{ marginTop: 0 }}>
-      <Container maxWidth="xs" style={{ position: 'absolute', left:'320px', top: '300px' }}>
+      <Container maxWidth="xs" style={{ position: 'absolute', left:'550px', top: '400px' }}>
         <Paper
           style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}
         >
