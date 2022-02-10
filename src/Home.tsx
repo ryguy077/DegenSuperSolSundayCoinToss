@@ -162,12 +162,15 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <Container style={{ marginTop: 0 }}>
-      <Container maxWidth="xs" style={{ position: 'absolute', left:'550px', top: '400px' }}>
-        <Paper
+    <Container style={{ marginTop: 0, width: '100%', height: '100%', }}>
+      <Container maxWidth="xs" style={{ width: '100%', height: '100%', background: 'black', opacity: 0.8, fontSize: '80px', color: 'white' }}>
+        Coming soon<br />
+
+        <a href='https://discord.gg/e8y8gshy' style={{ fontSize: '40px', textDecoration: 'none' }}>Discord</a>
+        {/* <Paper
           style={{ padding: 24, backgroundColor: '#151A1F', borderRadius: 6 }}
-        >
-          {!wallet.connected ? (
+        > */}
+        {/* {!wallet.connected ? (
             <ConnectButton>Connect Wallet</ConnectButton>
           ) : (
             <>
@@ -208,24 +211,9 @@ const Home = (props: HomeProps) => {
                 )} 
               </MintContainer>
             </>
-          )}
-          
- 
-        </Paper>
+          )} */}
+        {/* </Paper> */}
       </Container>
-
-      <Snackbar
-        open={alertState.open}
-        autoHideDuration={6000}
-        onClose={() => setAlertState({ ...alertState, open: false })}
-      >
-        <Alert
-          onClose={() => setAlertState({ ...alertState, open: false })}
-          severity={alertState.severity}
-        >
-          {alertState.message}
-        </Alert>
-      </Snackbar>
     </Container>
   );
 };
